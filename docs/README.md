@@ -12,4 +12,4 @@ These packages can be installed locally with manual intervention.
 - `nodejs` (for coc in vim)
 
 ## Screenshots
-- ![terminal](./screenshot.png)
+- ![terminal](screenshot.png)
