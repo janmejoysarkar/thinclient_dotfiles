@@ -16,7 +16,7 @@ inoremap <silent><expr> <C-Space> coc#refresh()
 """
 
 colorscheme sorbet
-set number
+set relativenumber
 set hlsearch
 syntax on
 nnoremap Y "+y

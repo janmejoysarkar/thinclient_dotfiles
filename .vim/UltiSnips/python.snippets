@@ -11,3 +11,17 @@ DESCRIPTION
 """
 
 endsnippet
+
+snippet circ_mask "Create a circular mask" b
+def create_circular_mask(h, w, col, row, radius): 
+    '''
+    *** creates circular mask of desired size ***
+    - h, w: height and width of canvas
+    - col, row: column and row of circle center
+    - radius= radius of circle
+    '''
+    Y, X = np.ogrid[:h, :w]
+    dist_from_center = np.sqrt((X - col)**2 + (Y-row)**2)
+    mask = dist_from_center <= radius
+    return mask #can be circular mask of any size
+endsnippet
