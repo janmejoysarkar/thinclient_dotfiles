@@ -10,3 +10,6 @@ These packages can be installed locally with manual intervention.
 - `google-chrome`
 - `rclone`
 - `nodejs` (for coc in vim)
+
+## Screenshots
+- ![terminal](./screenshot.png)
