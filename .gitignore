@@ -7,5 +7,5 @@
 !.vim
 !.bashrc
 !docs/*
-
-
+!proxycmd.py
+!tailscale_init.sh

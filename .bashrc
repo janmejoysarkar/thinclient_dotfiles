@@ -18,10 +18,8 @@ export PATH="$HOME/.local/rclone:$PATH"
 export PATH="$HOME/.local/AppImage:$PATH"
 
 alias google-chrome="$HOME/.local/google-chrome/opt/google/chrome/google-chrome &" 
-alias rclonemount="rclone mount Dropbox:/Janmejoy_SUIT_Dropbox ~/Dropbox/Janmejoy_SUIT_Dropbox --vfs-cache-mode full --daemon -v"
+alias rclonemount="rclone mount Dropbox:Janmejoy_SUIT_Dropbox ~/Dropbox/ --vfs-cache-mode full --daemon -v"
 alias ql='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/quick_look.py'
 alias qlt='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/quick_look_tile.py'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' >> ~/.bashrc
 alias condainit='source $HOME/anaconda3/etc/profile.d/conda.sh && conda activate solphy'
-condainit
-
