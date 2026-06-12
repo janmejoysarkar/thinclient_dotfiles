@@ -1,6 +1,9 @@
 #!/bin/bash
-tailscaled --tun=userspace-networking \
+~/tailscale/tailscaled \
+  --state=$HOME/tailscale/tailscaled.state \
+  --socket=$HOME/tailscale/tailscaled.sock \
+  --tun=userspace-networking \
   --socks5-server=localhost:1055 \
-  --state=$HOME/.local/tailscale-data/tailscaled.state \
-  --socket=$HOME/.local/tailscale-data/tailscaled.sock &
+  --outbound-http-proxy-listen=localhost:1055
+
 
